@@ -1,0 +1,51 @@
+//header
+html body {
+    width: 100%;
+    min-width: 1025px;
+    height: auto;
+    font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
+    position: relative;
+    background: #eee;
+
+    header {
+        width: 100%;
+        height: 10vh;
+        background: #dfdfdf;
+        display: flex;
+        min-width: 1025px;
+    
+       main {
+           width: 1400px;
+           min-width: 1025px;
+           margin: auto;
+           display: flex;
+           justify-content: space-between;
+    
+           .logo {
+            width: 13vh;
+            height: 13vh;
+            background: url(../image/logo.jpg)no-repeat;
+            background-size: 100%;
+            margin-left: 5px;
+        }
+    
+        ul {
+            width: 27%;
+            height: 10vh;
+            display: flex;
+            margin-right: 20px;
+            background: chocolate;
+    
+            li {
+                padding: 0 5%;
+                font-size: 2.4vh;
+                color: #000;
+                text-align: center;
+                line-height: 10vh;
+                background: cornflowerblue;
+            }
+        }
+       }
+        
+    }
+}
