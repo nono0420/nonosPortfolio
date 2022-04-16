@@ -17,7 +17,6 @@ html body {
         padding: 0;
         list-style: none;
         overflow: hidden;
-        background-color: #fff;
       }
       
       .header li a {
@@ -31,21 +30,45 @@ html body {
       .header .menu-btn:hover {
         background-color: #f4f4f4;
       }
-      
-      .header .logo {
-        display: block;
-        float: left;
-        font-size: 2em;
-        padding: 10px 20px;
-        text-decoration: none;
+
+      .logo-bg {
+          width: 105px;
+          height: 100%;
+          border: 3px solid #000;
+          border-top: none;
+          border-radius: 0 0 15px 15px;
+          display: flex;
+          padding: 5px 10px 0px;
+          float: left;
+          margin-left: 8%;
+
+
+          .logo {
+            display: block;
+            font-size: 2em;
+            // padding: 10px 20px;
+            text-decoration: none;
+            background: url(../image/logo.png) no-repeat;
+            background-size: 100%;
+            width: 38px;
+            height: 44px;;
+          }
+
+          .logotext {
+            color: #000;
+            line-height: 2;
+            font-size: 25px;
+            padding-left: 10px;
+          }
+          
       }
-      
       /* menu */
       
       .header .menu {
         clear: both;
         max-height: 0;
         transition: max-height .2s ease-out;
+        margin-right: 8%;
       }
       
       /* menu icon */
@@ -54,23 +77,25 @@ html body {
         cursor: pointer;
         display: inline-block;
         float: right;
-        padding: 28px 20px;
+        padding: 35px 35px;
         position: relative;
         user-select: none;
+        background: #000;
+        border-radius: 0 0 0 30px;
       }
       
       .header .menu-icon .navicon {
         background: #333;
         display: block;
-        height: 2px;
+        height: 4px;
         position: relative;
         transition: background .2s ease-out;
-        width: 18px;
+        width: 35px;
       }
       
       .header .menu-icon .navicon:before,
       .header .menu-icon .navicon:after {
-        background: #333;
+        background: #fff;
         content: '';
         display: block;
         height: 100%;
@@ -95,6 +120,7 @@ html body {
       
       .header .menu-btn:checked ~ .menu {
         max-height: 240px;
+        background: #ffeb3b;
       }
       
       .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -128,24 +154,51 @@ html body {
           float: right;
           max-height: none;
         }
-        .header .menu-icon {
-          display: none;
-        }
+        // .header .menu-icon {
+        //   display: none;
+        // }
       }
 
 
       main {
-          .background {
-              width: 100%;
-              height: auto;
-              background: #000;
-          }
+
+        // min-height: 980px;
+
+        .small-header {
+            width: 100%;
+            height: 62px;
+        }
 
           article {
-              width: 1200px;
-              height: 500px;
-              background: #eee;
+              width: 100%;
+              height: 800px;
               margin: auto;
+              margin-top: 5%;
+
+              .banner-left {
+                width: 40%;
+                height: 582px;
+                background: olive;
+
+                li {
+                    font-size: 90px;
+                    text-align: left;
+                    padding-left: 15%;
+                }
+              }
+
+              .banner-right {
+                width: 50%;
+                height: auto;
+                
+                .main-picture {
+                    max-width: 100%;
+                    height: 582px;
+                    background: url(../image/main-picture.png) no-repeat;
+                    background-size: contain;
+                }
+
+            }
           }
       }
 }
