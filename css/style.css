@@ -208,9 +208,22 @@ html body .header-2 article {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 48em) {
+  html body .header-2 article {
+    margin-top: 8%;
+    height: 700px;
+  }
+}
 @media (max-width: 26em) {
   html body .header-2 article {
     margin-top: 8%;
+    height: 400px;
+  }
+}
+@media (max-width: 16em) {
+  html body .header-2 article {
+    margin-top: 8%;
+    height: 460px;
   }
 }
 html body .header-2 article .banner-left {
@@ -265,6 +278,8 @@ html body .header-2 article .banner-left button {
 html body .header-2 article .banner-right {
   width: 50%;
   height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media (max-width: 48em) {
   html body .header-2 article .banner-right {
@@ -332,6 +347,12 @@ html body .header-2 article .banner-right .yellow {
     }
   }
 }
+@media (max-width: 26em) {
+  html body .header-2 article .banner-right .yellow {
+    height: 195px;
+    margin-top: 43%;
+  }
+}
 html body .header-2 article .banner-right .main-picture {
   max-width: 100%;
   height: 582px;
@@ -342,12 +363,13 @@ html body .header-2 article .banner-right .main-picture {
 }
 @media (max-width: 48em) {
   html body .header-2 article .banner-right .main-picture {
-    margin-top: 20%;
+    margin-top: -15%;
   }
 }
 @media (max-width: 26em) {
   html body .header-2 article .banner-right .main-picture {
-    height: 300px;
+    height: 260px;
+    margin-top: 0;
   }
 }
 html body .header-2 article .banner-right .circle-1 {
@@ -357,7 +379,7 @@ html body .header-2 article .banner-right .circle-1 {
   border: 3px solid #fbd165;
   background: none;
   position: absolute;
-  top: 40%;
+  top: 23%;
   left: 45%;
   -webkit-animation: 1.5s scale infinite;
           animation: 1.5s scale infinite;
@@ -392,15 +414,15 @@ html body .header-2 article .banner-right .circle-1 {
 }
 @media (max-width: 48em) {
   html body .header-2 article .banner-right .circle-1 {
-    top: 50%;
-    left: 27%;
+    top: 20%;
+    left: 23%;
   }
 }
 @media (max-width: 26em) {
   html body .header-2 article .banner-right .circle-1 {
     width: 10px;
     height: 10px;
-    top: 30%;
+    top: 19%;
     left: 24%;
   }
 }
@@ -411,7 +433,7 @@ html body .header-2 article .banner-right .circle-2 {
   border: 3px solid #fbd165;
   background: none;
   position: absolute;
-  top: 13%;
+  top: 7%;
   left: 53%;
   -webkit-animation: 2s scale infinite;
           animation: 2s scale infinite;
@@ -434,13 +456,13 @@ html body .header-2 article .banner-right .circle-2 {
   html body .header-2 article .banner-right .circle-2 {
     width: 10px;
     height: 10px;
-    top: 24%;
-    left: 42%;
+    top: 9%;
+    left: 37%;
   }
 }
 @media (max-width: 26em) {
   html body .header-2 article .banner-right .circle-2 {
-    top: 19%;
+    top: 13%;
   }
 }
 html body .header-2 article .banner-right .circle-3 {
@@ -450,7 +472,7 @@ html body .header-2 article .banner-right .circle-3 {
   border: 3px solid #fbd165;
   background: none;
   position: absolute;
-  top: 19%;
+  top: 11%;
   left: 57%;
   -webkit-animation: 1.5s scale infinite;
           animation: 1.5s scale infinite;
@@ -473,7 +495,7 @@ html body .header-2 article .banner-right .circle-3 {
   html body .header-2 article .banner-right .circle-3 {
     width: 20px;
     height: 20px;
-    top: 29%;
+    top: 11%;
     left: 48%;
   }
 }
@@ -481,31 +503,27 @@ html body .header-2 article .banner-right .circle-3 {
   html body .header-2 article .banner-right .circle-3 {
     width: 10px;
     height: 10px;
-    top: 21%;
+    top: 14%;
   }
 }
 html body main {
   width: 100%;
   height: auto;
 }
-@media (max-width: 26em) {
-  html body main {
-    margin-top: -90%;
-  }
-}
-@media (max-width: 24em) {
-  html body main {
-    margin-top: -100%;
-  }
-}
-@media (max-width: 22em) {
-  html body main {
-    margin-top: -135%;
-  }
-}
 html body main .Webdesign-box {
   width: 100%;
   height: 600px;
   background: #FBD165;
   border-radius: 20px 20px 0 0;
+}
+html body main .Bannerdesign-box {
+  width: 100%;
+  height: 600px;
+  background: #91B1AA;
+}
+html body main .Logodesign-box {
+  width: 100%;
+  height: 600px;
+  background: #F2D9B3;
+  border-radius: 0px 0px 20px 20px;
 }
