@@ -2,7 +2,7 @@
 html body {
     width: 100%;
     height: auto;
-    font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
+    font-family: 微軟正黑體!important;
     position: relative;
 
     .header {
@@ -11,7 +11,7 @@ html body {
         z-index: 99;
         background: #fff;
         box-shadow: 0px -2px 10px #00000069;
-        font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
+        font-family: 微軟正黑體 !important;
       }
       
       .header ul {
@@ -31,6 +31,7 @@ html body {
       .header li a:hover,
       .header .menu-btn:hover {
         color: #D76835;
+        transition: 0.2s;
       }
 
       .logo-bg {
@@ -203,6 +204,9 @@ html body {
                         @media (max-width: 48em) {
                             font-size: 8vh;
                         }
+                        @media (max-width: 40em) {
+                            font-size: 6vh;
+                        }
                     }
                 }
 
@@ -288,6 +292,101 @@ html body {
 
                     @media (max-width: 48em) {
                         margin-top: 20%;
+                    }
+                }
+
+                .circle-1 {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    border: 3px solid #fbd165;
+                    background: none;
+                    position: absolute;
+                    top: 68%;
+                    left: 45%;
+                    animation: 1.5s scale infinite;
+
+                    @keyframes scale{
+                        0%{
+                            transform: scale(1);
+                        }
+                
+                        50%{
+                            transform: scale(0);
+                        }
+                
+                        100%{
+                            transform: scale(1);
+                        }
+                    }
+
+                    @media (max-width: 48em) {
+                        top: 59%;
+                        left: 27%;
+                    }
+                }
+                .circle-2 {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    border: 3px solid #fbd165;
+                    background: none;
+                    position: absolute;
+                    top: 22%;
+                    left: 53%;
+                    animation: 2s scale infinite;
+
+                    @keyframes scale{
+                        0%{
+                            transform: scale(1);
+                        }
+                
+                        50%{
+                            transform: scale(0);
+                        }
+                
+                        100%{
+                            transform: scale(1);
+                        }
+                    }
+
+                    @media (max-width: 48em) {
+                        width: 10px;
+                        height: 10px;
+                        top: 37%;
+                        left: 42%;
+                    }
+                }
+                .circle-3 {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    border: 3px solid #fbd165;
+                    background: none;
+                    position: absolute;
+                    top: 32%;
+                    left: 57%;
+                    animation: 1.5s scale infinite;
+
+                    @keyframes scale{
+                        0%{
+                            transform: scale(1);
+                        }
+                
+                        50%{
+                            transform: scale(0);
+                        }
+                
+                        100%{
+                            transform: scale(1);
+                        }
+                    }
+
+                    @media (max-width: 48em) {
+                        width: 20px;
+                        height: 20px;
+                        top: 42%;
+                        left: 45%;
                     }
                 }
             }
