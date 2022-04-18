@@ -510,6 +510,7 @@ html body main {
   width: 100%;
   height: auto;
   position: relative;
+  margin-bottom: 25px;
 }
 html body main .Webdesign-box {
   width: 100%;
@@ -661,4 +662,24 @@ html body main .Logodesign-box article .swiper-smallbox {
 html body main .Logodesign-box article .swiper-pagination-bullet {
   background: #fff;
   border: 2px solid #000;
+}
+html body .profile {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+html body .profile .profile-box {
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+html body .profile .profile-box span {
+  text-align: center;
+  font-size: 5vh;
+}
+html body .profile .profile-box .mypicture {
+  width: 70%;
+  height: 195px;
+  background: #000;
+  margin: 40px;
 }
